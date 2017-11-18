@@ -172,8 +172,8 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
 "authorinfo
-let g:vimrc_author='clivesun' 
-let g:vimrc_email='clivesunmeng@gmail.com' 
+let g:vimrc_author='tuobameng' 
+let g:vimrc_email='tuobameng@yeah.net' 
 "let g:vimrc_homepage='http://www.vimer.cn' 
 nmap <F8> :AuthorInfoDetect<cr> 
 
