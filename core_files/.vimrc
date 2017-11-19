@@ -51,7 +51,7 @@ set incsearch
 set hlsearch 
 
 "设置vim打开时的大小
-set lines=35 columns=118
+"set lines=35 columns=118
 
 "ctags
 "eg. :set tags=F:\C++code\tags
@@ -156,6 +156,7 @@ set colorcolumn=80
 "更改80字符的线的颜色
 highlight ColorColumn ctermbg=black guibg=black
 
+"nerdcommenter
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
 " Use compact syntax for prettified multi-line comments
@@ -172,8 +173,8 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 
 "authorinfo
-let g:vimrc_author='tuobameng' 
-let g:vimrc_email='tuobameng@yeah.net' 
+let g:vimrc_author='clivesun' 
+let g:vimrc_email='clivesunmeng@gmail.com' 
 "let g:vimrc_homepage='http://www.vimer.cn' 
 nmap <F8> :AuthorInfoDetect<cr> 
 
@@ -204,3 +205,13 @@ endif
 let Tlist_Show_One_File = 1            "不同时显示多个文件的tag，只显示当前文件的
 let Tlist_Exit_OnlyWindow = 1          "如果taglist窗口是最后一个窗口，则退出vim
 let Tlist_Use_Right_Window = 1         "在右侧窗口中显示taglist窗口 
+
+let g:ale_python_flake8_executable = 'flake8'
+let g:ale_python_flake8_options = '--accept-encodings=utf-8,utf-16,utf8,utf16'
+let g:ale_python_flake8_use_global = 0
+let g:ale_python_mypy_executable = 'mypy'
+let g:ale_python_mypy_options = ''
+let g:ale_python_mypy_use_global = 0
+let g:ale_python_pylint_executable = 'pylint'
+let g:ale_python_pylint_options = ''
+let g:ale_python_pylint_use_global = 0
